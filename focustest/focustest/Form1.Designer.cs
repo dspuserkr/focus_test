@@ -29,17 +29,17 @@
         private void InitializeComponent()
         {
             this.buttAddRegStock = new System.Windows.Forms.Button();
-            this.DgvRegStock = new System.Windows.Forms.DataGridView();
+            this.DgvAutoStockList = new System.Windows.Forms.DataGridView();
             this.CBoxFocusList = new System.Windows.Forms.ComboBox();
-            this.DgvFocusStock = new System.Windows.Forms.DataGridView();
+            this.DgvRegStockList = new System.Windows.Forms.DataGridView();
             this.buttDelRegStock = new System.Windows.Forms.Button();
             this.listRegList = new System.Windows.Forms.ListView();
             this.TBoxFocusList = new System.Windows.Forms.TextBox();
             this.buttNewGroup = new System.Windows.Forms.Button();
             this.buttDelGroup = new System.Windows.Forms.Button();
             this.TBoxSelGroup = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.DgvRegStock)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DgvFocusStock)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvAutoStockList)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvRegStockList)).BeginInit();
             this.SuspendLayout();
             // 
             // buttAddRegStock
@@ -51,14 +51,14 @@
             this.buttAddRegStock.Text = "RegAdd";
             this.buttAddRegStock.UseVisualStyleBackColor = true;
             // 
-            // DgvRegStock
+            // DgvAutoStockList
             // 
-            this.DgvRegStock.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DgvRegStock.Location = new System.Drawing.Point(306, 52);
-            this.DgvRegStock.Name = "DgvRegStock";
-            this.DgvRegStock.RowTemplate.Height = 23;
-            this.DgvRegStock.Size = new System.Drawing.Size(352, 150);
-            this.DgvRegStock.TabIndex = 1;
+            this.DgvAutoStockList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DgvAutoStockList.Location = new System.Drawing.Point(306, 52);
+            this.DgvAutoStockList.Name = "DgvAutoStockList";
+            this.DgvAutoStockList.RowTemplate.Height = 23;
+            this.DgvAutoStockList.Size = new System.Drawing.Size(352, 150);
+            this.DgvAutoStockList.TabIndex = 1;
             // 
             // CBoxFocusList
             // 
@@ -70,14 +70,14 @@
             this.CBoxFocusList.TabIndex = 2;
             this.CBoxFocusList.SelectedIndexChanged += new System.EventHandler(this.ClickCBoxFocusList);
             // 
-            // DgvFocusStock
+            // DgvRegStockList
             // 
-            this.DgvFocusStock.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DgvFocusStock.Location = new System.Drawing.Point(32, 52);
-            this.DgvFocusStock.Name = "DgvFocusStock";
-            this.DgvFocusStock.RowTemplate.Height = 23;
-            this.DgvFocusStock.Size = new System.Drawing.Size(240, 150);
-            this.DgvFocusStock.TabIndex = 3;
+            this.DgvRegStockList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DgvRegStockList.Location = new System.Drawing.Point(32, 52);
+            this.DgvRegStockList.Name = "DgvRegStockList";
+            this.DgvRegStockList.RowTemplate.Height = 23;
+            this.DgvRegStockList.Size = new System.Drawing.Size(240, 150);
+            this.DgvRegStockList.TabIndex = 3;
             // 
             // buttDelRegStock
             // 
@@ -143,16 +143,16 @@
             this.Controls.Add(this.buttNewGroup);
             this.Controls.Add(this.TBoxFocusList);
             this.Controls.Add(this.listRegList);
-            this.Controls.Add(this.DgvFocusStock);
+            this.Controls.Add(this.DgvRegStockList);
             this.Controls.Add(this.CBoxFocusList);
-            this.Controls.Add(this.DgvRegStock);
+            this.Controls.Add(this.DgvAutoStockList);
             this.Controls.Add(this.buttDelRegStock);
             this.Controls.Add(this.buttAddRegStock);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.DgvRegStock)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DgvFocusStock)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvAutoStockList)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvRegStockList)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -161,9 +161,9 @@
         #endregion
 
         private System.Windows.Forms.Button buttAddRegStock;
-        private System.Windows.Forms.DataGridView DgvRegStock;
+        private System.Windows.Forms.DataGridView DgvAutoStockList;
         private System.Windows.Forms.ComboBox CBoxFocusList;
-        private System.Windows.Forms.DataGridView DgvFocusStock;
+        private System.Windows.Forms.DataGridView DgvRegStockList;
         private System.Windows.Forms.Button buttDelRegStock;
         private System.Windows.Forms.ListView listRegList;
         private System.Windows.Forms.TextBox TBoxFocusList;
